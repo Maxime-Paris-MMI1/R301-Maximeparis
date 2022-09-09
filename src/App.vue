@@ -21,11 +21,16 @@
           <h2>lien vers Page Liste</h2>
         </router-link>
       </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/liste-fetch">
+          <h2>lien vers Page Liste-fetch</h2>
+        </router-link>
+      </li>
     </ul>
   </nav>
 
   <!-- Affiche les pages -->
-  <router-view class="m-2 border-2 p-2" />
+  <Suspense> <router-view class="m-2 border-5" /></Suspense>
 </template>
 
 <script setup lang="ts">
