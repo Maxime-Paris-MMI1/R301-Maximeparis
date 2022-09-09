@@ -1,8 +1,8 @@
 [ 
-    {"nom":"Maison1", "prix":654, "favori":true, "nbrSDB":2, "image":"/image/house.png"},
+    {"nom":"Maison1", "prix":654, "favori":true, "nbrSDB":2, "image":"/image/house4.jpg"},
 
-    {"nom":"Maison2", "prix":458, "favori":false, "nbrSDB":5, "image":"/image/house2.png"},
+    {"nom":"Maison2", "prix":458, "favori":false, "nbrSDB":5, "image":"/image/house.png"},
     
-    {"nom":"Maison3", "prix":1507, "favori":false, "nbrSDB":7, "image":"/image/house3.jpg"},
+    {"nom":"Maison3", "prix":1507, "favori":false, "nbrSDB":7, "image":"/image/house5.jpg"}
 
 ]
