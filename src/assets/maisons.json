@@ -3,6 +3,6 @@
 
     {"nom":"Maison2", "prix":458, "favori":false, "nbrSDB":5, "image":"/image/house.png"},
     
-    {"nom":"Maison3", "prix":1507, "favori":false, "nbrSDB":7, "image":"/image/house5.jpg"}
+    {"nom":"Maison3", "prix":1507, "favori":false, "nbrSDB":7, "image":"/image/house5.jpg"} 
 
 ]

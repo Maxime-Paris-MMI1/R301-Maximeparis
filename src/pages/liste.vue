@@ -10,7 +10,7 @@
 <script setup lang="ts">
     import card from "../components/card.vue";
 
-  const maisons = [{nom:"Maison1", prix:589, nbrSDB:5, image:"/image/house.png", favori:true,}
-  , {nom:"Maison2", prix:739, nbrSDB:2, image:"/image/house2.png", favori:false,}
-  , {nom:"Maison3", prix:350, nbrSDB:4, image:"/image/house3.jpg", favori:true,}]
+  const maisons = [{nom:"Maison1", prix:589, nbrSDB:5, image:"/image/house2.png", favori:true,},
+   {nom:"Maison2", prix:739, nbrSDB:2, image:"/image/house.png", favori:false,},
+    {nom:"Maison3", prix:350, nbrSDB:4, image:"/image/house3.jpg", favori:true,}]
 </script>
