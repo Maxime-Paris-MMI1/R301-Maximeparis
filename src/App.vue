@@ -27,6 +27,11 @@
         </router-link>
       </li>
       <li>
+        <router-link class="text-red-600 underline" to="/offre/Maison1">
+          <h2>lien vers Page nbr.vue</h2>
+        </router-link>
+      </li>
+      <li>
         <router-link class="text-red-600 underline" to="/edit/new">
           <h2>lien vers Page new.vue</h2>
         </router-link>
