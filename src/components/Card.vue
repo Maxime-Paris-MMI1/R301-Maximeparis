@@ -10,6 +10,7 @@ defineProps ({
     nbrSDB: Number,
   });
 
+
 </script>
 
 <template>

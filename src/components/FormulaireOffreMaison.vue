@@ -22,8 +22,7 @@
            <FormKit name="prix" label="Prix" type="number" />
            <FormKit name="nbrSDB" label="Nombre de salle de bain" type="number" />
            <FormKit name="favori" label="Àjouter aux favoris"
-           type="checkbox"  wrapper-class="flex" :submit-attrs="{ classes: { input: 'bg-red-300 p-1 rounded' } }"
- />
+           type="checkbox"  wrapper-class="flex" :submit-attrs="{ classes: { input: 'bg-red-300 p-1 rounded-3xl' } }"/>
         </FormKit>
      </div>
     </div>
