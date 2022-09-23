@@ -8,6 +8,9 @@ defineProps ({
     favori: Boolean,
     image: String, // les images sont simplement l'URL absolue (depuis la racine, débute par '/' )
     nbrSDB: Number,
+    nbrChambres: Number,
+    adresse: String,
+    surface: Number,
   });
 
 
@@ -30,10 +33,13 @@ defineProps ({
       <div class="text-2xl font-bold text-indigo-500 pr-1">${{ prix }}</div>
 
       <h3 class="text-2xl text-gray-900">{{ nom }}</h3>
+      <h3 class="text-xl text-gray-700">{{ adresse }}</h3>
 
       <hr class="border-indigo-100 border-t-2 my-4" />
 
       <div><bath class="inline-block pr-1" />{{ nbrSDB }} Bathrooms</div>
+      <div class="ml-5">{{ nbrChambres }} Chambre</div>
+      <div class="ml-5">{{ surface }}</div>
     </figcaption>
   </figure>
 </template>
