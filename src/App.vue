@@ -36,6 +36,11 @@
           <h2>lien vers Page new.vue</h2>
         </router-link>
       </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/list-Supabase">
+          <h2>lien vers Page Listsupabase</h2>
+        </router-link>
+      </li>
     </ul>
   </nav>
 
