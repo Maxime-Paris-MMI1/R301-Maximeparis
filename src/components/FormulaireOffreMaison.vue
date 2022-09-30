@@ -7,6 +7,11 @@
     // ATTENTION : faire une Ref pas une Reactive car :
     // c'est l'objet qui doit être réactif, pas ses props
     const maison = ref({ prix:0, nom:"Nom de la maison",  nbrSDB:0, nbrChambres:0, image:"/image/house.png", favoris:false});
+
+    async function upsertMaison(dataForm, node) {
+    const { data, error } = await supabase.from("Maison").upsert(dataForm);
+    if (error) node.setErrors([error.message])
+}
 </script>
 <template>
     <div>
@@ -17,7 +22,8 @@
         </div>
      <div class="p-2 text-center">
         <!-- On passe la "ref" à FormKit -->
-        <FormKit type="form" :submit-attrs="{ classes: { input: 'bg-indigo-600 px-10 py-2 rounded mt-10 mb-16 hover:motion-safe:animate-pulse text-white' } }" :config="{classes: {input: 'p-1 rounded  border-gray-300 shadow-sm border  hover:bg-gray-200', label: 'text-indigo-800'}}" v-model="maison" >
+        <FormKit type="form" :submit-attrs="{ classes: { input: 'bg-indigo-600 px-10 py-2 rounded mt-10 mb-16 hover:motion-safe:animate-pulse text-white' } }" :config="{classes: {input: 'p-1 rounded  border-gray-300 shadow-sm border  hover:bg-gray-200', label: 'text-indigo-800'}}" 
+        v-model="maison" @submit="upsertMaison" >
             <FormKit name="nom" label="Nom"  />
             <FormKit name="prix" label="Prix" type="number" />
             <FormKit name="nbrSDB" label="Nombre de salle de bain" type="number" />
