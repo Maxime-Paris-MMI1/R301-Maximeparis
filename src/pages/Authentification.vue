@@ -14,7 +14,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="flex justify-center bg-indigo-200">
     <button v-if="user" @pointerdown="supabase.auth.signOut()">
       Se déconnecter ({{ user.email }})
     </button>

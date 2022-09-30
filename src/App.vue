@@ -5,12 +5,9 @@
         <div class="flex items-center">
           <Logo class="w-8 fill-indigo-500" />
         </div>
-        <div class="lg:hidden">
-          <MenuIcon class="w-8 cursor-pointer" @click="MenuOpen = !MenuOpen" />
-        </div>
         <nav
-          class="absolute left-0 top-16 w-full -translate-y-[200%] bg-slate-300 pl-2 lg:relative lg:top-0 lg:w-fit lg:translate-y-0 lg:bg-transparent"
-          :class="MenuOpen && 'translate-y-0'">
+          class="lg:relative lg:top-0 lg:w-fit lg:translate-y-0 lg:bg-transparent mt-10 lg:mt-0"
+          >
           <ul class="flex flex-col gap-8 py-4 font-bold lg:flex-row mr-10">
             <li>
               <router-link to="/">
@@ -56,55 +53,7 @@
         </nav>
       </div>
     </header>
-  <nav>
-    <h4 class="text-xl">
-      <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
-      menu (dans <code class="font-mono">/src/App.vue</code>)
-    </h4>
-    <ul>
-      <li>
-        <router-link class="text-red-600 underline" to="/">
-          lien vers
-          <code class="font-mono">/src/pages/index.vue</code>
-        </router-link>
-      </li>
-      <li>
-        <router-link class="text-red-600 underline" to="/simple">
-          lien vers la page simple
-        </router-link>
-      </li>
-      <li>
-        <router-link class="text-red-600 underline" to="/liste">
-          <h2>lien vers Page Liste</h2>
-        </router-link>
-      </li>
-      <li>
-        <router-link class="text-red-600 underline" to="/liste-fetch">
-          <h2>lien vers Page Liste-fetch</h2>
-        </router-link>
-      </li>
-      <li>
-        <router-link class="text-red-600 underline" to="/offre/Maison1">
-          <h2>lien vers Page nbr.vue</h2>
-        </router-link>
-      </li>
-      <li>
-        <router-link class="text-red-600 underline" to="/edit/new">
-          <h2>lien vers Page new.vue</h2>
-        </router-link>
-      </li>
-      <li>
-        <router-link class="text-red-600 underline" to="/list-Supabase">
-          <h2>lien vers Page Listsupabase</h2>
-        </router-link>
-      </li>
-      <li>
-        <router-link class="text-red-600 underline" to="/authentification">
-          <h2>lien vers Page Authentification</h2>
-        </router-link>
-      </li>
-    </ul>
-  </nav>
+
 
   <!-- Affiche les pages -->
   <Suspense> <router-view class="m-2 border-5" /></Suspense>
