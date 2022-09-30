@@ -8,9 +8,16 @@
     // c'est l'objet qui doit être réactif, pas ses props
     const maison = ref({ prix:0, nom:"Nom de la maison",  nbrSDB:0, nbrChambres:0, image:"/image/house.png", favori:false});
 
+    
+    import { useRouter } from "vue-router";
+    const router = useRouter();
     async function upsertMaison(dataForm, node) {
     const { data, error } = await supabase.from("Maison").upsert(dataForm);
     if (error) node.setErrors([error.message])
+    else {
+    node.setErrors([]);
+    router.push({ name: "edit-id", params: { id: data[0].id } });
+    }
 }
 </script>
 <template>
