@@ -45,6 +45,11 @@
               </router-link>
             </li>
             <li>
+              <router-link to="/edit/[id]">
+                <h2>Page [id]</h2>
+              </router-link>
+            </li>
+            <li>
               <router-link class="text-indigo-700 underline" to="/authentification">
                 <h2>Authentification</h2>
               </router-link>
