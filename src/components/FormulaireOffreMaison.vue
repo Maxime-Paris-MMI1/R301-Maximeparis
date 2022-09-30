@@ -6,7 +6,7 @@
     // On fait une variable réactive qui réference les données
     // ATTENTION : faire une Ref pas une Reactive car :
     // c'est l'objet qui doit être réactif, pas ses props
-    const maison = ref({ prix:0, nom:"Nom de la maison",  nbrSDB:0, image:"/image/house.png", favoris:false});
+    const maison = ref({ prix:0, nom:"Nom de la maison",  nbrSDB:0, nbrChambres:0, image:"/image/house.png", favoris:false});
 </script>
 <template>
     <div>
@@ -21,6 +21,7 @@
             <FormKit name="nom" label="Nom"  />
             <FormKit name="prix" label="Prix" type="number" />
             <FormKit name="nbrSDB" label="Nombre de salle de bain" type="number" />
+            <FormKit name="nbrChambres" label="Nombre de chambres" type="number" />
             <div class="flex justify-center">
             <FormKit name="favori" label="Àjouter aux favoris"
             type="checkbox"  wrapper-class="flex" :submit-attrs="{ classes: { input: 'bg-red-300 p-1 rounded' } }"/>
