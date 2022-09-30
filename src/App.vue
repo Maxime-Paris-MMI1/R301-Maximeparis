@@ -11,33 +11,49 @@
         <nav
           class="absolute left-0 top-16 w-full -translate-y-[200%] bg-slate-300 pl-2 lg:relative lg:top-0 lg:w-fit lg:translate-y-0 lg:bg-transparent"
           :class="MenuOpen && 'translate-y-0'">
-          <ul class="flex flex-col gap-8 py-4 font-bold lg:flex-row">
-            <li>index.vue</li>
-            <li> simple</li>
-            <li> Liste</li>
-            <li> Liste-fetch</li>
-            <li> nbr.vue</li>
+          <ul class="flex flex-col gap-8 py-4 font-bold lg:flex-row mr-10">
+            <li>
+              <router-link to="/">
+                index.vue
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/simple">
+                page simple
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/liste">
+                <h2>Page Liste</h2>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/liste-fetch">
+                <h2>Liste-fetch</h2>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/offre/Maison1">
+                <h2>nbr.vue</h2>
+              </router-link>
+            </li>
             <li>
               <router-link to="/edit/new">
                 <h2>new.vue</h2>
               </router-link>
             </li>
             <li>
-              <Routerlink to="/list-Supabase">Listsupabase</Routerlink>
+              <router-link to="/list-Supabase">
+                <h2>Listsupabase</h2>
+              </router-link>
             </li>
             <li>
-              <RouterLink to="/authentification"> Authentification</RouterLink>
+              <router-link class="text-indigo-700 underline" to="/authentification">
+                <h2>Authentification</h2>
+              </router-link>
             </li>
           </ul>
         </nav>
-        <div class="menu-text gap-4">
-          <button class="bouton2 mt-1 mb-1 font-bold text-[#6366F1]">
-            Login
-          </button>
-          <button class="bouton1 mr-2 mt-1 mb-1 font-bold text-white">
-            Sign Up
-          </button>
-        </div>
       </div>
     </header>
   <nav>
