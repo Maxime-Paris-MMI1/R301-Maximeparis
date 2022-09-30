@@ -12,11 +12,14 @@
           class="absolute left-0 top-16 w-full -translate-y-[200%] bg-slate-300 pl-2 lg:relative lg:top-0 lg:w-fit lg:translate-y-0 lg:bg-transparent"
           :class="MenuOpen && 'translate-y-0'">
           <ul class="flex flex-col gap-8 py-4 font-bold lg:flex-row">
-            <li>Rent</li>
-            <li>Buy</li>
-            <li>Sell</li>
-            <li>Manage Property</li>
-            <li>Ressources</li>
+            <li>index.vue</li>
+            <li> simple</li>
+            <li> Liste</li>
+            <li> Liste-fetch</li>
+            <li> nbr.vue</li>
+            <li> new.vue</li>
+            <li> Listsupabase</li>
+            <RouterLink to="/authentification"> Authentification</RouterLink>
           </ul>
         </nav>
         <div class="menu-text gap-4">
