@@ -14,18 +14,21 @@
 </script>
 
 <template>
-  <div class="flex justify-center bg-indigo-200">
+  <div class="flex justify-center bg-indigo-200 py-32">
     <button v-if="user" @pointerdown="supabase.auth.signOut()">
       Se déconnecter ({{ user.email }})
     </button>
+
     <FormKit
       v-else
       type="form"
       :submit-label="nvlUtilisateur ? 'S\'inscrire' : 'Se connecter'"
       @submit="signIn"
     >
-      <FormKit name="email" label="Votre eMail" type="email" />
+    <div class="font-bold">
+      <FormKit name="email" label="Votre eMail" type="email"  />
       <FormKit name="password" label="Mot de passe" type="password" />
+    </div>
       <formKit
         label="Nouvel utilisateur ?"
         name="nvlUtilisateur"

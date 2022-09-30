@@ -5,6 +5,8 @@
 
 <template>
     <main>
-        <Formulaire />
+        <div class="flex justify-center w-11/12">
+            <Formulaire />
+        </div>
     </main>
 </template>

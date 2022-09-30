@@ -1,7 +1,7 @@
 <template>
   <section>
-    <h1 class="text-2xl">
-      Bonjour<code class="font-mono text-base">/src/pages/index.vue</code>
+    <h1 class="text-2xl font-bold my-32 text-center">
+      Bonjour cliquez sur les autres liens dans le menu pour accéder aux différentes pages
     </h1>
   </section>
 </template>
