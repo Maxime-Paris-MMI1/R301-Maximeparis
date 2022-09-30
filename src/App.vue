@@ -17,9 +17,17 @@
             <li> Liste</li>
             <li> Liste-fetch</li>
             <li> nbr.vue</li>
-            <li> new.vue</li>
-            <li> Listsupabase</li>
-            <RouterLink to="/authentification"> Authentification</RouterLink>
+            <li>
+              <router-link to="/edit/new">
+                <h2>new.vue</h2>
+              </router-link>
+            </li>
+            <li>
+              <Routerlink to="/list-Supabase">Listsupabase</Routerlink>
+            </li>
+            <li>
+              <RouterLink to="/authentification"> Authentification</RouterLink>
+            </li>
           </ul>
         </nav>
         <div class="menu-text gap-4">
