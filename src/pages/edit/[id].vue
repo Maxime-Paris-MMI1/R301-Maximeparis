@@ -4,5 +4,7 @@
     </script>
     
 <template>
-    <Formulaire :id="id" />
+    <div class="flex justify-center w-11/12">
+        <Formulaire :id="id" />
+    </div>
 </template>
