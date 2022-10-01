@@ -50,6 +50,11 @@
               </router-link>
             </li>
             <li>
+              <router-link  to="/quartier/quartiercommune">
+                <h2>Quartiercommune</h2>
+              </router-link>
+            </li>
+            <li>
               <router-link class="text-indigo-700 underline" to="/authentification">
                 <h2>Authentification</h2>
               </router-link>
