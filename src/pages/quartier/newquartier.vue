@@ -1,3 +1,10 @@
+<script setup lang="ts">
+    import FormulaireQuartier from "../../components/FormulaireQuartier.vue";
+</script>
+    
+    
 <template>
-    <h1>test</h1>
+  <div class="p-2">
+    <FormulaireQuartier />
+  </div>
 </template>
