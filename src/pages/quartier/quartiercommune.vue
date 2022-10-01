@@ -15,27 +15,21 @@
       <section class="flex flex-col">
         <h3 class="text-2xl mb-5">Liste des quartiers</h3>
 
-        
 
-
-        
         <Disclosure v-for="(listeQuartier, libelleCommune) in groupBy(data,'libelle_Commune')" :key="libelleCommune" v-slot="{ open }">
           <ul>
-            <li v-for="quartierObject in (data as any[])">
-              <div class="flex justify-start mb-5">
-                <DisclosureButton> 
-                  {{ quartierObject.libelle_Commune }}
-                </DisclosureButton> 
+            <li v-for="quartierObject in listeQuartier">
+              <DisclosureButton class="flex justify-start mb-5"> 
+                {{ quartierObject.libelle_Commune }}
                 <ChevronRightIcon :class="open && 'rotate-90 transform'" class="w-5 h-5" />
-              </div>
+              </DisclosureButton> 
+            </li>
+            <li v-for="quartierObject in listeQuartier" :key="quartierObject.code_Quartier" class="mb-5 font-bold">
               <DisclosurePanel>
-                <li v-for="quartierObject in listeQuartier" :key="quartierObject.code_Quartier" class="mb-5 font-bold">
-                  {{ quartierObject.libelle_Quartier }}
-                </li>
+                {{ quartierObject.libelle_Quartier }}
               </DisclosurePanel>
             </li>
           </ul>
-          
         </Disclosure>
 
 
