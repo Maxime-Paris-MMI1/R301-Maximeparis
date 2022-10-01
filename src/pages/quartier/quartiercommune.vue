@@ -18,21 +18,28 @@
           <DisclosureButton></DisclosureButton>
         </Disclosure>
 
-        <DisclosurePanel>
-          <ul>
+        
+        <ul>
           <li v-for="quartierObject in (data as any[])">
             {{ quartierObject.libelle_Commune }} -
             {{ quartierObject.libelle_Quartier }}
           </li>
-
-          <li
-          v-for="quartierObject in listeQuartier"
-          :key="quartierObject.code_Quartier"
-          >
-          
-          </li>
         </ul>
-        </DisclosurePanel>
+
+        
+        <Disclosure>
+          <DisclosurePanel>
+            <ul>
+              <li
+              v-for="quartierObject in listeQuartier"
+              :key="quartierObject.code_Quartier"
+              >
+              </li>
+            </ul>
+          </DisclosurePanel>
+
+        </Disclosure>
+
 
       </section>
     </template>
