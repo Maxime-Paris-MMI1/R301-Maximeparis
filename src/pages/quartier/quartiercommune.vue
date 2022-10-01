@@ -13,7 +13,7 @@
     
     <template>
       <section class="flex flex-col">
-        <h3 class="text-2xl mb-5">Liste des quartiers</h3>
+        <h3 class="text-2xl mb-5">Liste des Communes et des quartiers</h3>
 
 
         <Disclosure v-for="(listeQuartier, libelleCommune) in groupBy(data,'libelle_Commune')" :key="libelleCommune" v-slot="{ open }">
