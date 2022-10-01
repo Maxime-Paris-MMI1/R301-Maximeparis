@@ -6,17 +6,13 @@
     DisclosureButton,
     DisclosurePanel,
     } from '@headlessui/vue'
-    const { data, error } = await supabase.from("maisonquartier").select("*");
-    if (error) console.log("n'a pas pu charger la table maisonquartier :", error);
+    const { data, error } = await supabase.from("allusers").select("*");
+    if (error) console.log("n'a pas pu charger la table allusers :", error);
 </script>
     
     <template>
       <section class="flex flex-col">
         <h3 class="text-2xl">Liste des quartiers</h3>
-
-        <Disclosure v-for="(listeQuartier, libelleCommune) in groupBy(data,'libelle_Commune')" :key="libelleCommune">
-          <DisclosureButton></DisclosureButton>
-        </Disclosure>
 
         
         <ul>
@@ -27,6 +23,11 @@
         </ul>
 
         
+        <Disclosure v-for="(listeQuartier, libelleCommune) in groupBy(data,'libelle_Commune')" :key="libelleCommune">
+          <DisclosureButton> </DisclosureButton>
+        </Disclosure>
+
+
         <Disclosure>
           <DisclosurePanel>
             <ul>
