@@ -35,18 +35,13 @@
               </router-link>
             </li>
             <li>
-              <router-link to="/edit/new">
-                <h2>new.vue</h2>
-              </router-link>
-            </li>
-            <li>
               <router-link to="/list-Supabase">
                 <h2>Listsupabase</h2>
               </router-link>
             </li>
             <li>
               <router-link to="/edit/[id]">
-                <h2>Page [id]</h2>
+                <MenuDown2/>
               </router-link>
             </li>
             <li>
@@ -149,6 +144,7 @@
 import { Bars3Icon } from '@heroicons/vue/20/solid'
 import Logo from './components/icones/Logo.vue'
 import MenuDown from './components/MenuDown.vue'
+import MenuDown2 from './components/MenuDown2.vue'
 
 
 </script>
