@@ -40,9 +40,7 @@
               </router-link>
             </li>
             <li>
-              <router-link to="/edit/[id]">
                 <MenuDown2/>
-              </router-link>
             </li>
             <li>
               <MenuDown/>

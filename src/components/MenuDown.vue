@@ -21,7 +21,7 @@
                 </router-link>
             </MenuItem>
             <MenuItem v-slot="{ active }">
-                <router-link to="/quartier/[id]quartier">
+                <router-link to="/quartier/[id]">
                     <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']">Edit quartier</a>
                 </router-link>
             </MenuItem>

@@ -26,7 +26,9 @@
             </li>
             <li v-for="quartierObject in listeQuartier" :key="quartierObject.code_Quartier" class="mb-5 font-bold">
               <DisclosurePanel>
-                {{ quartierObject.libelle_Quartier }}
+                <RouterLink :to="{ name: 'quartier-id', params: { id: quartierObject.code_Quartier },}">
+                  {{ quartierObject.libelle_Quartier }}
+                </RouterLink>
               </DisclosurePanel>
             </li>
           </ul>
