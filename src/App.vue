@@ -50,9 +50,7 @@
               </router-link>
             </li>
             <li>
-              <router-link  to="/quartier/quartiercommune">
-                <h2>Quartiercommune</h2>
-              </router-link>
+              <MenuDown/>
             </li>
             <li>
               <router-link class="text-indigo-700 underline" to="/authentification">
@@ -150,6 +148,7 @@
 <script setup lang="ts">
 import { Bars3Icon } from '@heroicons/vue/20/solid'
 import Logo from './components/icones/Logo.vue'
+import MenuDown from './components/MenuDown.vue'
 
 
 </script>
