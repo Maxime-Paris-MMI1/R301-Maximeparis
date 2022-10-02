@@ -32,7 +32,7 @@
 
 <template>
 
-  <h1 class="text-2xl font-bold mb-6">Modifier le nom du quartier</h1>
+
 
   <FormKit type="form" :submit-attrs="{ classes: { input: 'bg-indigo-600 px-10 py-2 rounded mt-10 mb-16 hover:motion-safe:animate-pulse text-white' } }" :config="{classes: {input: 'p-1 rounded  border-gray-300 shadow-sm border  hover:bg-gray-200', label: 'text-indigo-800'}}"
     v-model="quartier"  @submit="upsertquartier">
