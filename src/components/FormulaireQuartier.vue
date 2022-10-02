@@ -1,13 +1,15 @@
 <script setup lang="ts">
-  import { supabase } from "@/supabase";
+  import ListSupabaseVue from "@/pages/List-Supabase.vue";
+import quartiercommuneVue from "@/pages/quartier/quartiercommune.vue";
+import { supabase } from "@/supabase";
   import { ref } from "@vue/reactivity";
 
-  const Quartier = ref({ });
+
 
     
     import { useRouter } from "vue-router";
     const router = useRouter();
-    const props = defineProps(["code_commune"]);
+    const props = defineProps(["code_commune", "code_Quartier"]);
     if (props.code_commune) {
      // On charge les données du Quartier
      let { data, error } = await supabase
@@ -23,9 +25,12 @@
     if (error) node.setErrors([error.message])
     else {
     node.setErrors([]);
-    router.push({ name: "quartier-id", params: { id: data[0].id } });
+    router.push({ name: "/quartier/quartiercommune", params: { id: data[0].id } });
     }
   }
+  let { data } = await supabase
+  const Quartier = ref ({ code_commune: "NUL", code_Quartier:"NUL"});
+  
 
 </script>
 
